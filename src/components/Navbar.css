@@ -32,7 +32,7 @@ html{
     font-size: 1.8rem;
     text-decoration: none;
     cursor: pointer;
-    transition: 200ms;
+    transition: scale 200ms;
 }
 
 .NavbarList a:hover {
@@ -43,4 +43,51 @@ html{
 
 .NavbarElement {
     padding: 0rem 1.5rem;
+}
+
+.Burger {
+    display: none;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+}
+
+.Burger .bar {
+  width: 3rem;
+  height: 0.4rem;
+  background-color: #ECF6FA;
+  margin: 0.5rem 0;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 0.5rem rgba(0,0,0,0.25);
+  transition: 1s;
+}
+
+.xcross #first-bar {
+    transform: rotate(225deg) translate(-8px, -5px) ;
+    background-color: #FF9471;
+}
+
+.xcross #second-bar {
+    transform: scale(.5) rotate(270deg);
+	background-color: transparent;
+	box-shadow: none;
+}
+
+.xcross #third-bar {
+    transform: rotate(135deg) translate(-8px, 5px);
+    background-color: #FF9471;
+}
+
+@media screen and (max-width: 758px) {
+    .Burger {
+        display: inline-block;
+    }
+
+    .NavbarList{
+        display: none;
+    }
+
+    .Navbar {
+        justify-content: space-evenly;
+    }
 }

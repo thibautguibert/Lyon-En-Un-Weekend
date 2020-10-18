@@ -1,6 +1,7 @@
 import React from 'react';
 import './Navbar.css';
 import NavbarElement from './NavbarElement';
+import Burger from './Burger';
 
 const elements = [
     {
@@ -39,6 +40,7 @@ class Navbar extends React.Component {
                     ))}
 
                 </ul>
+                <Burger />
             </nav>
         )
     }
