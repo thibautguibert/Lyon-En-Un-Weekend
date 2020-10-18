@@ -1,4 +1,46 @@
+html{
+    font-size: 62.5%;
+}
+
 .Navbar {
+    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: #384484;
+    border-bottom: solid 0.75rem #ECF6FA;
+}
+
+.Navbar logo {
+    width: 4rem;
+}
+
+.NavbarList {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: 'Chilanka', cursive;
+    list-style-type: none;
+    padding-inline-start: 2rem;
+
+}
+
+.NavbarList a {
+    color : #ECF6FA;
+    font-size: 1.8rem;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 200ms;
+}
+
+.NavbarList a:hover {
+    color: #FF9471;
+    scale: 1.1;
+
+}
+
+.NavbarElement {
+    padding: 0rem 1.5rem;
 }
